@@ -1,18 +1,18 @@
-let valor: number = Number(prompt("introduzca valor"));
-let contador: number = 0;
-let ceros: number = 0;
-while (valor !== 0) {
-  contador = contador + 1;
+let valorIntroducido: number = Number(prompt("introduzca valor"));
+let numerosTotales: number = 0;
+let numerosPositivos: number = 0;
+while (valorIntroducido !== 0) {
+  numerosTotales++;
 
-  if (valor > 0) {
-    ceros = ceros + 1;
+  if (valorIntroducido > 0) {
+    numerosPositivos++;
   }
-  valor = Number(prompt("introduzca valor"));
+  valorIntroducido = Number(prompt("introduzca valor"));
 }
-let porcentaje: number = (ceros * 100) / contador;
+let porcentaje: number = (numerosPositivos * 100) / numerosTotales;
 console.log(
-  "cantidad denumeros > 0 ingresados: ",
-  ceros,
+  "cantidad de numeros positivos  ",
+  numerosPositivos,
   "es el ",
   porcentaje,
   " % del total"
