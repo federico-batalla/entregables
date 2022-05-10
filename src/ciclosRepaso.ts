@@ -3,10 +3,9 @@ let contador: number = 0;
 let ceros: number = 0;
 while (valor !== 0) {
   contador = contador + 1;
-  console.log(contador);
+
   if (valor > 0) {
     ceros = ceros + 1;
-    console.log(ceros);
   }
   valor = Number(prompt("introduzca valor"));
 }
