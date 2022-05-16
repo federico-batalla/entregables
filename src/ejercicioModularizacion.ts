@@ -1,4 +1,5 @@
 //------------------funciones------------------------
+// si es multiplo devuelve verdadero , si no devuelve falso
 function esMultiplo(dividendo: number, divisor: number): boolean {
   let resto: number = dividendo % divisor;
   if (resto === 0) {
@@ -8,6 +9,7 @@ function esMultiplo(dividendo: number, divisor: number): boolean {
 }
 
 //--------------------------------------------------------
+// devuelve la cantidad de divisores
 function cantidadDeDivisores(dividendo: number): number {
   let cantidadDivisores: number = 0;
   for (let indice = 1; indice <= dividendo; indice++) {
