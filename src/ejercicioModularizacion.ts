@@ -1,3 +1,4 @@
+//------------------funciones------------------------
 function esMultiplo(dividendo: number, divisor: number): boolean {
   let resto: number = dividendo % divisor;
   if (resto === 0) {
