@@ -1,12 +1,9 @@
 //----------------funciones---------------------
-/*recibe un arreglo de long 6 e ingresa los 6 numeros, devuelve un arreglo con
-6 numeros */
-function ingresarNumeros(): number[] {
-  let arreglo: number[] = new Array(6);
+/*recibe un arreglo de long 6 e ingresa los 6 numeros,  */
+function ingresarNumeros(arreglo: number[]) {
   for (let indice = 0; indice < 6; indice++) {
     arreglo[indice] = Number(prompt("ingrese los numeros"));
   }
-  return arreglo;
 }
 //----------------------------------------------
 /*recibe dos arreglos de long 6 y decuelve la suma de los dos en
@@ -43,7 +40,7 @@ let numeros1: number[] = new Array(6);
 let numeros2: number[] = new Array(6);
 let resultados: number[] = new Array(6);
 
-numeros1 = ingresarNumeros();
-numeros2 = ingresarNumeros();
+ingresarNumeros(numeros1);
+ingresarNumeros(numeros2);
 resultados = sumarArreglos(numeros1, numeros2);
 mostrarArreglos(numeros1, numeros2, resultados);
