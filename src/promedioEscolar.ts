@@ -48,7 +48,7 @@ function mostrarAlumno(
   console.log("tiene promedio", promedios[idAlumno]);
 }
 
-//------------------------------------------------------
+//------------------------programa principal------------------------------
 let cantidadAlumnos: number = Number(prompt("ingrese cantidad de alumnos"));
 let nombresAlumnos: String[] = new Array(cantidadAlumnos);
 let notas1Trimestre: Number[] = new Array(cantidadAlumnos);
